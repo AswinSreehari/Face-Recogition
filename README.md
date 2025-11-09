@@ -29,14 +29,14 @@ It can identify people both from webcam video feed and static images, based on p
 
 ---
 
- # 1️⃣ Activate virtual environment
+ ## 1️⃣ Activate virtual environment
 .\venv312\Scripts\Activate.ps1
 
-# 2️⃣ Capture your own images (optional)
+## 2️⃣ Capture your own images (optional)
 python capture_samples.py "Your_Name" --count 20 --cam 0
 
-# 3️⃣ Train the recognizer model
+## 3️⃣ Train the recognizer model
 python train_lbph.py
 
-# 4️⃣ Run live recognition via webcam
+## 4️⃣ Run live recognition via webcam
 python recognize_lbph.py --cam 0 --threshold 90
