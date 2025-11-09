@@ -47,23 +47,24 @@ The system is lightweight, works **offline**, and can be easily retrained with n
 
 Follow these steps to set up and run the project on your local machine 👇
 
-### Step 1 — Clone or Download the Project
+###  Clone or Download the Project
 If you have Git installed:
 ```powershell
 git clone https://github.com/AswinSreehari/Face-Recognition.git
 cd "Face-Recognition"
+```
 
-## 1️⃣ Navigate to project folder
+### 1️⃣ Navigate to project folder
 cd "C:\Users\<YourName>\Desktop\Face Recognition"
 
-## 2️⃣ Activate virtual environment
+### 2️⃣ Activate virtual environment
 .\venv312\Scripts\Activate.ps1
 
-## 3️⃣ (Optional) Capture your own images
+### 3️⃣ (Optional) Capture your own images
 python capture_samples.py "Your_Name" --count 20 --cam 0
 
-## 4️⃣ Train the model
+### 4️⃣ Train the model
 python train_lbph.py
 
-## 5️⃣ Run live recognition
+### 5️⃣ Run live recognition
 python recognize_lbph.py --cam 0 --threshold 90
